@@ -1,0 +1,11 @@
+.weather-body {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.col2 {
+  font-size: 80px;
+}
