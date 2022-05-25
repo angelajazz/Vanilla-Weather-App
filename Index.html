@@ -16,28 +16,32 @@
   </head>
   <body>
     <div class="weather-body">
-      <input
-        type="text"
-        placeholder="Search City"
-        autocomplete="off"
-        autofocus="on"
-        id="search-text-input"
-      />
+      <form id="weather-search">
+        <input
+          type="text"
+          placeholder="Search City"
+          autocomplete="off"
+          autofocus="on"
+          id="search-text-input"
+        />
 
-      <input type="submit" value="🔍" class="search-button" />
+        <input type="submit" value="🔍" class="search-button" />
+        <input type="button" value="📍" class="current-button" />
+      </form>
+      <br />
       <div class="row row-cols-2">
         <div class="col1">
           <h1 id="city">Hong Kong</h1>
           <h6 id="info-one">
-            <span class="date-clock">Day Time</span>,
-            <span class="description">Mood</span>
+            <span class="date-clock">Day 00:00</span>,
+            <span class="mood" id="mood">Mood</span>
           </h6>
           <h6 id="info-two">
             <span class="humid"> Humidity: Number</span>,
             <span class="blow">Wind: Numero</span>
           </h6>
         </div>
-        <div class="col2"><span class="Temp">28°C</span></div>
+        <div class="col2"><span class="temp">28°C</span></div>
       </div>
     </div>
     <script src="src/script.js"></script>
