@@ -33,12 +33,18 @@ function showWeather(response) {
   let humidity = document.querySelector(".humid");
   let blow = document.querySelector(".blow");
   let dateClock = document.querySelector(".date-clock");
+  let image = document.querySelector("#weather-image");
   h1.innerHTML = `${response.data.name}`;
   description.innerHTML = `${response.data.weather[0].description}`;
   number.innerHTML = `${temperature}`;
   humidity.innerHTML = `${response.data.main.humidity}%`;
   blow.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   dateClock.innerHTML = formatDate(response.data.dt * 1000);
+  image.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  image.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "da282525e55f95a4cb19896aa6f33352";
