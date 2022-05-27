@@ -13,3 +13,12 @@
 .mood {
   text-transform: capitalize;
 }
+
+.col2 .active {
+  color: black;
+  cursor: default;
+}
+
+.col2 .active:hover {
+  text-decoration: none;
+}
