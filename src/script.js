@@ -76,7 +76,7 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let currentButton = document.querySelector(".current-button");
+let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
 
 function displayFahrenheitTemperature(event) {

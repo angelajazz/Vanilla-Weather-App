@@ -8,6 +8,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/7a03b5d200.js"
+      crossorigin="anonymous"
+    ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,17 +26,27 @@
   </head>
   <body>
     <div class="weather-body">
+      <p>
       <form id="weather-search">
-        <input
+        <div class="row">
+        <div class="col-8"><input
           type="text"
           placeholder="Search City"
           autocomplete="off"
           autofocus="on"
+          class="form-control"
           id="search-text-input"
         />
-
-        <input type="submit" value="🔍" class="search-button" />
-        <input type="button" value="📍" class="current-button" />
+</div>
+        <div class="col-1"><button type="submit" class="btn btn-outline-secondary" />🔍</button></div>
+       <div class="col-1"><button
+          type="button"
+          class="btn btn-outline-secondary"
+          id="current-button"
+        >
+          📍
+        </button></div>
+        </div>
       </form>
       <br />
       <div class="row row-cols-2">
@@ -43,12 +63,22 @@
         </div>
         <div class="col2">
           <img src="" alt="Clear" id="weather-image" class="float-left" />
-          <span class="temp"> </span
-          ><a href="#" id="celsius-link" class="active">°C</a> |
+<span class="temp"> </span>
+          <a href="#" id="celsius-link" class="active">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
         </div>
       </div>
+      </p>
     </div>
+       <div class="open-source">
+        <span>
+          <a
+            href="https://github.com/angelajazz/Vanilla-Weather-App"
+            target="_blank"
+            >Open-source code
+          </a>
+          by Angela Jazz</span>
+      </div>
     <script src="src/script.js"></script>
   </body>
 </html>

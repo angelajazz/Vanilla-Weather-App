@@ -1,9 +1,46 @@
+@keyframes color {
+  0% {
+    background: #8ef6e4;
+  }
+  20% {
+    background: #9896f1;
+  }
+  40% {
+    background: #d59bf6;
+  }
+  60% {
+    background: #edb1f1;
+  }
+  80% {
+    background: #9896f1;
+  }
+  100% {
+    background: #8ef6e4;
+  }
+}
+
+body {
+  background: #33cccc; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+
 .weather-body {
+  background-color: #fbf2d5;
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
-  border: 1px solid;
+  padding: 15px;
+  border: 1.5px solid;
   border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.9;
+}
+
+.weather-body p {
+  margin: 5%;
+  font-weight: bold;
+  color: #0000;
 }
 
 .temp {
@@ -21,4 +58,10 @@
 
 .col2 .active:hover {
   text-decoration: none;
+}
+
+.open-source {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
 }
